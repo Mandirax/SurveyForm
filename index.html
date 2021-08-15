@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Helping hand</title>
+        <style>
+            *{
+    box-sizing: border-box;
+}
+body{
+    background-color: darkslategrey;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  input[type=submit] {
+    background-color: #558a80;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+    margin-left: 450px;
+  }
+  input[type=submit]:hover {
+    background-color: #075055;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px;
+margin-left:50px;
+margin-right:50px;
+  }
+  .colms-1 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .colms-2 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  #heading{
+      text-align: center;
+      color: white;
+  }
+  #desc{
+      border: 2px solid white;
+      color:wheat;
+      padding: 10px;
+      text-align: center;
+  }
+#flood{
+margin-left:90px;
+margin-right:90px
+}
+        </style>
+        
+    </head>
+    <body>
+        <div id="flood">
+            <div id="heading"> <h1 id="title">Survey Form for People affected in chiplun flood</h1></div><br>
+           <div id="desc"><p id="description">21 July 2021 was the unforgettable day for people of Chiplun city!
+            First time the city experienced the impact of massive floods which was worst than the flood in 2005.
+            Many people lost their homes and shops.Some people lost their lives also.
+            This survey form is made to collect the data of the needs of the flood affected people.Through this form it will become
+            easier for those who want to give a helping hand. </p></div><br><br>
+       
+        <div class="container"><form id="survey-form">
+            <div class="row">
+                <div class="colms-1">
+                    <label id="name-label" for="name" >&#9679;  Full name</label>
+                </div>
+            
+            <div class="colms-2">
+                <input type="text" id="name" placeholder="Full Name" required>
+            </div>
+        </div>
+           
+        <div class="row">
+            <div class="colms-1">
+                <label id="number-label" for="number" >&#9679;  Mobile No.</label>
+            </div>
+        
+             <div class="colms-2">
+                 <input type="text" id="number" placeholder="Mobile No" required>
+             </div>
+        </div>
+       
+        <div class="row">
+             <div class="colms-1">
+                <label id="email-label" for="email" >&#9679;  Email</label>
+             </div>
+    
+             <div class="colms-2">
+                <textarea id="email" rows="2" cols="40" placeholder="email" ></textarea>
+             </div>
+        </div>
+
+       
+
+
+        <div class="row">
+            <div class="colms-1">
+                <label id="add-label" for="add" >&#9679;  Address</label>
+            </div>
+
+            <div class="colms-2">
+                <textarea id="add" rows="4" cols="50" placeholder="address" required></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="colms-1">
+                <label id="nom-label" for="nom"> &#9679;  Total Members in Family</label>
+            </div>
+
+            <div class="colms-2">
+                <input type="text" id="nom" placeholder="Total members" required>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="colms-1">
+                <label id="resd-label" for="dropdown" >&#9679;  Resident Type</label>
+            </div>
+
+            <div class="colms-2">
+                <select name="dropdown" id="dropdown">
+                    <option value="House">House</option>
+                    <option value="Building">Building</option>
+                </select>
+            </div>
+        </div>
+
+
+        
+           
+            
+            
+            <br><br></b>&#9679;  Condition of Home<br><input type="radio" id="tiw" name="condition" value="Totally in water">
+            <label for="tiw">Totally in water</label><br>
+            <input  type="radio" id="hiw" name="condition" value="Half in water">
+            <label for="hiw">Half in water</label><br>
+            <input  type="radio" id="col" name="condition" value="Collapsed">
+            <label for="col">Collapsed</label><br>
+            <input  type="radio" id="nh" name="condition" value="Nothing Happened">
+            <label for="nh">Nothing Happened</label><br><br><br>
+            &#9679;  Do You have any older member in Your Family ?<br><input type="radio" id="y" name="ask" value="Yes">
+            <label for="y">Yes</label><br>
+            <input type="radio" id="n" name="ask" value="No">
+            <label for="n">No</label><br><br>
+            &#9679;  Do You have any baby in Your Family ? <br><input type="radio" id="ba1" name="baby" value="Yes">
+            <label for="ba1">Yes</label><br>
+            <input type="radio" id="ba2" name="baby" value="No">
+            <label for="ba2">No</label><br><br>
+            &#9679;  Select the items you want<br>
+            <table>
+                <tr>
+                    <td><input type="checkbox" id="wb" name="wb" value="Water Bottles">
+                        <label for="wb">Water Bottles</label></td>
+                    <td><input type="checkbox" id="mi" name="mi" value="Milk">
+                        <label for="mi">Milk</label></td>
+                    <td>  <input type="checkbox" id="Cdl" name="Cdl" value="Candles">
+                        <label for="Cdl">Candles</label></td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" id="ri" name="ri" value="Rice">
+                <label for="ri">Rice</label></td>
+                    <td> <input type="checkbox" id="dl" name="dl" value="Dal">
+                        <label for="dl">Dal</label></td>
+                    <td> <input type="checkbox" id="sg" name="sg" value="Sugar">
+                        <label for="sg">Sugar</label></td>
+                </tr>
+
+                
+
+                <tr>
+                    <td> <input type="checkbox" id="pp" name="pp" value="Papad">
+                        <label for="pp">Papad</label></td>
+                    <td><input type="checkbox" id="sn" name="sn" value="Sanitary napkins">
+                        <label for="sn">Sanitary Napkins</label></td>
+                    <td> <input type="checkbox" id="sp" name="sp" value="Bathing Soap">
+                        <label for="sp">Bathing Soap</label></td>
+                </tr>
+
+
+                <tr>
+                    <td> <input type="checkbox" id="mg" name="mg" value="Maggie">
+                        <label for="mg">Maggie</label></td>
+                    <td><input type="checkbox" id="at" name="at" value="Ata">
+                        <label for="at">Ata</label><br></td>
+                    <td><input type="checkbox" id="Clg" name="Clg" value="Colgate">
+                        <label for="Clg">Colgate</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="ms" name="ms" value="Masale">
+                        <label for="ms">Masale</label></td>
+                    <td>  <input type="checkbox" id="ct" name="ct" value="Clothes">
+                        <label for="ct">Clothes</label></td>
+                    <td><input type="checkbox" id="mdc" name="mdc" value="First Aid Kit">
+                        <label for="mdc">First Aid Kit</label></td>
+                </tr>
+                <tr>
+                    <td> <input type="checkbox" id="rpf" name="rpf" value="ReadyMade Packaged Food">
+                        <label for="rpf">Readymade Packaged Food</label></td>
+                    <td><input type="checkbox" id="cm" name="cm" value="Chaha Powder">
+                        <label for="cm">Chaha Powder</label></td>
+                    <td>  <input type="checkbox" id="Bi" name="Bi" value="Biscuits">
+                        <label for="Bi">Biscuits</label></td>
+                </tr>
+                
+                <tr>
+                    <td> <input type="checkbox" id="pl" name="pl" value="Plates">
+                        <label for="pl">Plates</label></td>
+                    <td><input type="checkbox" id="fo" name="fo" value="Food Oil">
+                        <label for="fo">Food Oil</label></td>
+                    <td>  <input type="checkbox" id="mp" name="mp" value="Milk Powder">
+                        <label for="mp">Milk Powder</label></td>
+                </tr></table><br><br>          
+                             
+              
+                &#9679;  Select The pet you own<br><br>
+               <input type="checkbox" id="pet1" name="pet1" value="Persian cat">
+               <label for="pet1">Persian Cat</label>
+               <input type="checkbox" id="pet2" name="pet2" value="Local cat">
+               <label for="pet2">Local Cat</label>
+               <input type="checkbox" id="pet3" name="pet3" value="Stray Dog">
+               <label for="pet3">Stray Dog</label>
+               <input type="checkbox" id="pet4" name="pet4" value="Dog with breed">
+               <label for="pet4">Dog with breed</label>
+               <input type="checkbox" id="pet5" name="pet5" value="Turtle">
+               <label for="pet5">Turtle</label>
+               <input type="checkbox" id="pet6" name="pet6" value="Birds">
+               <label for="pet6">Birds</label><br><br>
+               &#9679;  Do you want pet food ?<br><br><input type="radio" id="pe1" name="petfood" value="Yes">
+               <label for="pe1">Yes</label><br>
+               <input type="radio" id="pe2" name="petfood" value="No">
+               <label for="pe2">No</label><br><br>
+              
+               &#9679;  Anything You want to say<br><br><textarea id="cmts" rows="5" cols="40"></textarea>
+               <br><br>
+               <input type="submit" value="Submit">
+        </form></div>
+        </div>
+        
+    </body>
+</html>
